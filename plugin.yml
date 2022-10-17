@@ -1,0 +1,20 @@
+name: AutoClear
+main: roi611\clear\Main
+version: 1.2.0
+api:
+- 4.0.0
+- 5.0.0-ALPHA1
+load: POSTWORLD
+author: roi611
+description: アイテムを削除します
+
+commands: 
+  break:
+    description: 落ちているアイテムをすぐに削除します
+    usage: /break
+    permission: "clear.command"
+
+permissions:
+  clear.command:
+    default: op
+
