@@ -26,7 +26,7 @@ class Main extends PluginBase{
 
         $config = new Config($this->getDataFolder()."Config.yml",Config::YAML,array(
             "消去間隔(秒)" => 300,
-            "？秒前から全て通知する" => 10
+            "？秒前から全て通知する" => 10,
         ));
 
         date_default_timezone_set('Asia/Tokyo');
