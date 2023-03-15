@@ -30,7 +30,7 @@ class Main extends PluginBase{
         ));
 
         date_default_timezone_set('Asia/Tokyo');
-        $this->getScheduler()->scheduleRepeatingTask(new Run($config,$this),20);
+        $this->getScheduler()->scheduleRepeatingTask(new Run($config, $this), 20);
 
     }
     
@@ -118,8 +118,8 @@ class Main extends PluginBase{
 class Run extends Task{
     
     private $count = 0;
-
-    function __construct(Config $config,Main $main){
+    
+    function __construct(private Config $config, private Main $main){
         $this->config = $config;
         $this->main = $main;
 	}
